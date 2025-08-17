@@ -89,9 +89,9 @@ class TestStatistics{
                 return;
             }
             
-            printf("Min:    %.3f ms\n", LinuxTimer::toMilliseconds(getMin()));
-            printf("Max:    %.3f ms\n", LinuxTimer::toMilliseconds(getMax()));
-            printf("Mean:   %.3f ms\n", LinuxTimer::toMilliseconds(getMean()));
+            printf("Min:    %.3f ms\n", Timer::toMilliseconds(getMin()));
+            printf("Max:    %.3f ms\n", Timer::toMilliseconds(getMax()));
+            printf("Mean:   %.3f ms\n", Timer::toMilliseconds(getMean()));
             
             if (total_bytes > 0) {
                 printf("Throughput: %.3f GB/s\n", getThroughputGBps());
